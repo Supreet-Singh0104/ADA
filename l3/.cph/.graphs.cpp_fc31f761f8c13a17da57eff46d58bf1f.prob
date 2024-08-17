@@ -1,0 +1,1 @@
+{"name":"Local: graphs","url":"/Users/supreetsinghchawla/Desktop/ADA/l3/graphs.cpp","tests":[{"id":1723619053121,"input":"3 \n0 1 5\n1 2 3\n0 2 1\n","output":"\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/supreetsinghchawla/Desktop/ADA/l3/graphs.cpp","group":"local","local":true}
