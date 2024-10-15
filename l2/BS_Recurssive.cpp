@@ -2,16 +2,16 @@
 
 using namespace std;
 
-int search (int arr[],int k,int n){
-    int low=0;
-    int high=n-1;
-    while(low<=high){
-        int mid=low+(high-low)/2;
-        if(arr[mid]==k) return mid;
-        else if(arr[mid]>k) high=mid-1;
-        else low=mid+1;
+int search (int arr[],int k, int low,int high){
+    if(low==high){
+        if(arr[low]==arr[high]) return low;
+        else return -1;
     }
-    return -1;
+
+    int mid=low+(high-low)/2;
+    if(arr[mid]==k) return mid;
+    else if(arr[mid]>k) return search(arr,k,low,mid-1);
+    else return search(arr,k,mid+1,high);
 }
 
 int main() {
@@ -24,7 +24,7 @@ int main() {
 
      cout<<"Enter the Key to be Found";
     int k; cin>>k;
-    int pos=search(arr,k,n);
+    int pos=search(arr,k,0,n-1);
     if(pos==-1){
         cout<<"element not found";
     }else{

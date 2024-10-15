@@ -9,6 +9,10 @@
         "optional": "cpp",
         "ratio": "cpp",
         "tuple": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "iomanip": "cpp",
+        "__split_buffer": "c",
+        "list": "c",
+        "string": "c"
     }
 }
